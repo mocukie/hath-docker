@@ -1,5 +1,4 @@
 # Hentai@Home Docker
----
 
 *Run H@H as a non-root user in the docker.*
 
