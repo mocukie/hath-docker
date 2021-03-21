@@ -4,8 +4,8 @@ set -o errexit
 
 if [ "$(id -u)" -eq '0' ]
 then
-    USER_ID=${UID:-9001}
-    echo "Change user to $UID"
+    USER_ID=${PUID:-9001}
+    echo "Change user to $PUID"
 
     # usermod is not available in alpine, so we need to del and then add
     deluser hath && adduser -DH -s /sbin/nologin -u ${USER_ID} hath hath
