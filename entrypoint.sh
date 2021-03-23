@@ -18,7 +18,7 @@ if [ ! -f /hath/data/client_login ]; then
     echo -n "${HatH_KEY}" > /hath/data/client_login
   else 
     echo "HatH_KEY not specified."
-		exit 1
+    exit 1
   fi
 fi
 

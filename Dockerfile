@@ -20,7 +20,7 @@ RUN set -eux && \
     rm hath.zip && \
     apk del .buildPkg
 
-RUN addgroup -S hath & adduser -S hath hath
+RUN addgroup -S hath && adduser -S hath hath
 
 WORKDIR /hath
 
